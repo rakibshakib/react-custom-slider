@@ -1,0 +1,124 @@
+.active-dashboardSlide-pointer li,
+.dashboardSlide-pointer li {
+    transition: scale 100ms ease-in-out;
+}
+
+.active-dashboardSlide-pointer li:hover,
+.dashboardSlide-pointer li:hover {
+    scale: 1.2;
+}
+
+.dashboardSlide-pointer li::before {
+    content: "•";
+    /* padding-right: 5px; */
+    font-size: 30px;
+    color: #299647;
+    transition: scale 100ms ease-in-out;
+}
+
+.active-dashboardSlide-pointer li::before {
+    content: "•";
+    /* padding-right: 5px; */
+    font-size: 30px;
+    color: #D6FBDB;
+    transition: scale 100ms ease-in-out;
+}
+
+/* update slider for dashboard */
+.update-slider>div {
+    border-radius: 15px !important;
+    padding: 15px !important;
+}
+
+.update-slider .update-slider-title {
+    color: white;
+    border-bottom: 3px solid #D6FBDB;
+    width: 30%;
+    padding: 5px 0;
+}
+
+.update-slider .update-slider-details {
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+.update-carousel-container-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.5s ease;
+    /* Smooth transition for sliding effect */
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel:hover .carousel-inner {
+    animation: slide 5s infinite;
+}
+
+.slider-body {
+    border: 2px solid purple;
+}
+
+/* update csssssssssssssssssssss  */
+
+
+.image-dashboard-carousel,
+.image-dashboard-carousel::before,
+.image-dashboard-carousel::after {
+    box-sizing: border-box;
+}
+
+.image-dashboard-carousel {
+    padding: 16px !important;
+    margin-top: 35px;
+}
+
+.image-dashboard-carousel h2,
+.image-dashboard-carousel p,
+.image-dashboard-carousel li {
+    color: white !important;
+}
+
+.image-dashboard-carousel h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: white !important;
+    border-bottom: 3px solid #D6FBDB;
+    width: 30%;
+    padding: 5px 0;
+    /* display: inline-block; */
+}
+
+.image-dashboard-carousel p {
+    margin-top: 15px;
+}
+
+.update-dashboard-slider-component {
+    position: relative;
+    width: 100%;
+}
+
+.update-dashboard-slider-controller {
+    position: absolute;
+    top: 3px;
+    left: 13px;
+    width: 370px;
+}
+
+@media not (prefers-reduced-motion) {
+    .image-dashboard-carousel {
+        transition: translate 300ms ease-in-out;
+        /* transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms */
+    }
+
+}
